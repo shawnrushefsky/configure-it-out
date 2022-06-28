@@ -44,6 +44,8 @@ function walkObject(node) {
     .flat();
 }
 
+let maybes = [];
+
 function getProcessEnvNodes(node) {
   if (!node) {
     return;
@@ -55,9 +57,12 @@ function getProcessEnvNodes(node) {
   if (leaves.includes(node.type)) {
     return;
   }
+
   let val = [];
   if (node.type === "MemberExpression" && isProcessDotEnv(node)) {
     val = node;
+  } else if (isFromEnv(node)) {
+    maybes.push(node);
   } else {
     val = walkObject(node);
   }
@@ -65,6 +70,10 @@ function getProcessEnvNodes(node) {
     return val.flat().filter(exists);
   }
   return val;
+}
+
+function isFromEnv(node) {
+  return node?.init?.type === "Identifier" && node.init.name === "env";
 }
 
 function isProcessDotEnv(node) {
@@ -75,6 +84,10 @@ function isProcessDotEnv(node) {
     node.object.property?.type === "Identifier" &&
     node.object.property.name === "env"
   );
+}
+
+function isFrom({ propName, objName, tree }) {
+  return true;
 }
 
 async function getEnvVars() {
@@ -88,8 +101,23 @@ async function getEnvVars() {
           sourceType: "module",
           allowHashBang: true,
         });
-        fs.writeFile("tree.json", JSON.stringify(ast, null, 2));
-        const nodes = getProcessEnvNodes(ast);
+        fs.writeFile(`${filename}-tree.json`, JSON.stringify(ast, null, 2));
+        const raw = getProcessEnvNodes(ast);
+        const nodes = Array.isArray(raw) ? raw : [raw];
+        if (
+          maybes.length &&
+          isFrom({ propName: "env", objName: "process", tree: ast })
+        ) {
+          nodes.push(
+            ...maybes
+              .map(({ id: { properties } }) => {
+                return properties.map((prop) => {
+                  return { property: prop.key };
+                });
+              })
+              .flat()
+          );
+        }
         return nodes;
       } catch (e) {
         console.error(filename);
@@ -99,10 +127,7 @@ async function getEnvVars() {
     .flat()
     .filter(exists)
     .map((node) => {
-      if (
-        node?.property?.constructor.name === "Node" &&
-        node.property.type === "Identifier"
-      ) {
+      if (node.property.type === "Identifier") {
         return node.property.name;
       } else {
         console.error(node);
@@ -111,4 +136,7 @@ async function getEnvVars() {
   return allVars;
 }
 
-getEnvVars();
+getEnvVars().then((vars) => {
+  console.log(vars);
+  console.log(maybes);
+});
