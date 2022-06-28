@@ -1,3 +1,5 @@
+#! /usr/bin/env node
+
 const { LooseParser } = require("acorn-loose");
 const { Parser } = require("acorn");
 const jsx = require("acorn-jsx");

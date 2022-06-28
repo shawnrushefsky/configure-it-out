@@ -15,5 +15,8 @@
     "acorn-loose": "^8.3.0",
     "flow-parser": "^0.181.1",
     "glob": "^8.0.3"
+  },
+  "bin": {
+    "cfi": "./index.js"
   }
 }
