@@ -12,6 +12,8 @@
   "dependencies": {
     "acorn": "^8.7.1",
     "acorn-jsx": "^5.3.2",
+    "acorn-loose": "^8.3.0",
+    "flow-parser": "^0.181.1",
     "glob": "^8.0.3"
   }
 }

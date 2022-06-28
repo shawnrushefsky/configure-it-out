@@ -1,8 +1,10 @@
+const { LooseParser } = require("acorn-loose");
 const { Parser } = require("acorn");
 const jsx = require("acorn-jsx");
 const fs = require("fs").promises;
 const glob = require("glob");
 const path = require("path");
+const flow = require("flow-parser");
 
 function globFiles(dir) {
   return new Promise((resolve) => {
@@ -111,18 +113,44 @@ function isFrom({ propName, objName, tree }) {
     .flat().length;
 }
 
+function getAST(content) {
+  let tree;
+  try {
+    tree = Parser.extend(jsx()).parse(content, {
+      ecmaVersion: 2022,
+      sourceType: "module",
+      allowHashBang: true,
+    });
+  } catch (e) {}
+  if (!tree) {
+    try {
+      tree = LooseParser.parse(content, {
+        ecmaVersion: 2022,
+        sourceType: "module",
+        allowHashBang: true,
+      });
+    } catch (e) {}
+  }
+  if (!tree) {
+    try {
+      tree = flow.parse(content);
+    } catch (e) {}
+  }
+  return tree;
+}
+
 async function getEnvVars() {
   const dir = path.resolve(process.argv[2]);
   const contents = await globFiles(dir);
   const allVars = contents
     .map(({ content, filename }) => {
       try {
-        const ast = Parser.extend(jsx()).parse(content, {
-          ecmaVersion: 2022,
-          sourceType: "module",
-          allowHashBang: true,
-        });
-        fs.writeFile(`${filename}-tree.json`, JSON.stringify(ast, null, 2));
+        const ast = getAST(content);
+        if (!ast) {
+          console.log("Skipping", filename, "- unparsable");
+          return;
+        }
+        // fs.writeFile(`${filename}-tree.json`, JSON.stringify(ast, null, 2));
         const raw = treeFilter(ast, {
           success: (node) =>
             node.type === "MemberExpression" && isProcessDotEnv(node),
@@ -155,6 +183,8 @@ async function getEnvVars() {
     .map((node) => {
       if (node?.property?.type === "Identifier") {
         return node.property.name;
+      } else if (node?.property?.type === "Literal") {
+        return node.property.value;
       } else {
         console.error(node, node.constructor.name);
       }
@@ -163,5 +193,5 @@ async function getEnvVars() {
 }
 
 getEnvVars().then((vars) => {
-  console.log(vars);
+  console.log(JSON.stringify(vars, null, 2));
 });
