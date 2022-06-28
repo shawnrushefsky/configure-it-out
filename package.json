@@ -1,0 +1,17 @@
+{
+  "name": "configure-it-out",
+  "version": "1.0.0",
+  "description": "A tool for determing configuration options",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "start": "node index.js"
+  },
+  "author": "Shawn Rushefsky",
+  "license": "MIT",
+  "dependencies": {
+    "acorn": "^8.7.1",
+    "acorn-jsx": "^5.3.2",
+    "glob": "^8.0.3"
+  }
+}
