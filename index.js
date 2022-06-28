@@ -32,13 +32,13 @@ const exists = (a) => {
   return true;
 };
 
-function walkObject(node) {
+function walkObject(node, walker, opts) {
   return Object.keys(node)
     .map((key) => {
       if (Array.isArray(node[key])) {
-        return node[key].map(getProcessEnvNodes);
+        return node[key].map((element) => walker(element, opts));
       } else {
-        return getProcessEnvNodes(node[key]);
+        return walker(node[key], opts);
       }
     })
     .flat();
@@ -46,25 +46,31 @@ function walkObject(node) {
 
 let maybes = [];
 
-function getProcessEnvNodes(node) {
+const defaultOpts = {
+  leaves: ["Identifier", "Literal", "TemplateElement", "ThisExpression"],
+  success: (node) => true,
+  maybe: () => false,
+};
+function treeFilter(node, opts) {
+  opts = { ...defaultOpts, ...opts };
   if (!node) {
     return;
   }
   if (node.constructor.name !== "Node") {
     return;
   }
-  const leaves = ["Identifier", "Literal", "TemplateElement", "ThisExpression"];
+  const { leaves } = opts;
   if (leaves.includes(node.type)) {
     return;
   }
 
   let val = [];
-  if (node.type === "MemberExpression" && isProcessDotEnv(node)) {
+  if (opts.success(node)) {
     val = node;
-  } else if (isFromEnv(node)) {
+  } else if (opts.maybe(node)) {
     maybes.push(node);
   } else {
-    val = walkObject(node);
+    val = walkObject(node, treeFilter, opts);
   }
   if (Array.isArray(val)) {
     return val.flat().filter(exists);
@@ -87,7 +93,22 @@ function isProcessDotEnv(node) {
 }
 
 function isFrom({ propName, objName, tree }) {
-  return true;
+  const nodes = treeFilter(tree, {
+    success: (node) =>
+      node?.init?.type === "Identifier" && node.init.name === objName,
+  });
+  return !!nodes
+    .map((node) => {
+      switch (node.type) {
+        case "VariableDeclarator":
+          return node.id.properties
+            .map((prop) => prop.value.name)
+            .filter((name) => name === propName);
+        default:
+          console.error(node);
+      }
+    })
+    .flat().length;
 }
 
 async function getEnvVars() {
@@ -97,12 +118,16 @@ async function getEnvVars() {
     .map(({ content, filename }) => {
       try {
         const ast = Parser.extend(jsx()).parse(content, {
-          ecmaVersion: 20202,
+          ecmaVersion: 2022,
           sourceType: "module",
           allowHashBang: true,
         });
         fs.writeFile(`${filename}-tree.json`, JSON.stringify(ast, null, 2));
-        const raw = getProcessEnvNodes(ast);
+        const raw = treeFilter(ast, {
+          success: (node) =>
+            node.type === "MemberExpression" && isProcessDotEnv(node),
+          maybe: isFromEnv,
+        });
         const nodes = Array.isArray(raw) ? raw : [raw];
         if (
           maybes.length &&
@@ -118,6 +143,7 @@ async function getEnvVars() {
               .flat()
           );
         }
+        maybes = [];
         return nodes;
       } catch (e) {
         console.error(filename);
@@ -127,16 +153,15 @@ async function getEnvVars() {
     .flat()
     .filter(exists)
     .map((node) => {
-      if (node.property.type === "Identifier") {
+      if (node?.property?.type === "Identifier") {
         return node.property.name;
       } else {
-        console.error(node);
+        console.error(node, node.constructor.name);
       }
     });
-  return allVars;
+  return Array.from(new Set(allVars)).sort();
 }
 
 getEnvVars().then((vars) => {
   console.log(vars);
-  console.log(maybes);
 });
