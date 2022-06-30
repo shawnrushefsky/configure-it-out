@@ -7,6 +7,10 @@ const fs = require("fs").promises;
 const glob = require("glob");
 const path = require("path");
 const flow = require("flow-parser");
+const { program } = require("@caporal/core");
+const colorize = require("json-colorizer");
+const packageJson = require("./package.json");
+const cliProgress = require("cli-progress");
 
 function globFiles(dir) {
   return new Promise((resolve) => {
@@ -122,6 +126,7 @@ function getAST(content) {
       ecmaVersion: 2022,
       sourceType: "module",
       allowHashBang: true,
+      locations: true,
     });
   } catch (e) {}
   if (!tree) {
@@ -130,6 +135,7 @@ function getAST(content) {
         ecmaVersion: 2022,
         sourceType: "module",
         allowHashBang: true,
+        locations: true,
       });
     } catch (e) {}
   }
@@ -141,19 +147,25 @@ function getAST(content) {
   return tree;
 }
 
-async function getEnvVars() {
-  const dir = path.resolve(process.argv[2]);
+async function getEnvVars(dir, logger) {
+  logger.info(`Scanning ${dir}`);
   const contents = await globFiles(dir);
+  logger.info(`${contents.length} files found.`);
   const used = new Set();
+  const bar = new cliProgress.SingleBar({
+    format: "{bar} - {filename}",
+    hideCursor: true,
+  });
+  bar.start(contents.length, 0, { filename: "N/A" });
   const allVars = contents
     .map(({ content, filename }) => {
+      bar.increment({ filename: path.relative(dir, filename) });
       try {
         const ast = getAST(content);
         if (!ast) {
-          console.log("Skipping", filename, "- unparsable");
+          logger.warn("Skipping", filename, "- unparsable");
           return;
         }
-        // fs.writeFile(`${filename}-tree.json`, JSON.stringify(ast, null, 2));
         const raw = treeFilter(ast, {
           success: (node) =>
             node.type === "MemberExpression" && isProcessDotEnv(node),
@@ -187,37 +199,29 @@ async function getEnvVars() {
     .flat()
     .filter(exists)
     .map((node) => {
-      let answer;
+      const { loc, filename } = node;
+      const answer = {
+        filename,
+        loc,
+        type: "EnvironmentVariable",
+      };
+
       if (node?.property?.type === "Identifier") {
-        answer = {
-          name: node.property.name,
-          file: node.filename,
-          type: "EnvironmentVariable",
-        };
+        answer.name = node.property.name;
       } else if (node?.property?.type === "Literal") {
-        answer = {
-          name: node.property.value,
-          file: node.filename,
-          type: "EnvironmentVariable",
-        };
+        answer.name = node.property.value;
       } else if (node?.property?.type === "MemberExpression") {
-        answer = {
-          computed: getObjectNotation(node.property),
-          file: node.filename,
-          type: "EnvironmentVariable",
-        };
+        answer.computed = getObjectNotation(node.property);
       } else {
         console.error(node, node.constructor.name);
       }
-      if (!used.has(answer.name)) {
-        used.add(answer.name);
-        return answer;
-      }
+      return answer;
     })
     .filter((a) => a);
+  bar.stop();
   return allVars.sort((a, b) => {
-    const aName = a.name || a.computed;
-    const bName = b.name || b.computed;
+    const aName = a.computed || a.name;
+    const bName = b.computed || b.name;
     if (aName < bName) {
       return -1;
     } else if (aName > bName) {
@@ -238,6 +242,37 @@ function getObjectNotation(node) {
   return note;
 }
 
-getEnvVars().then((vars) => {
-  console.log(JSON.stringify(vars, null, 2));
-});
+program
+  .name(packageJson.name)
+  .version(packageJson.version)
+  .argument("<dir>", "Root directory of a project to scan")
+  .option("--fmt <fmt>", "The Output Format", {
+    default: "json",
+    validator: ["json"],
+  })
+  .option("--output <dest>", "A filename, or stdout or stderr", {
+    default: "stdout",
+  })
+  .action(async ({ logger, args, options }) => {
+    logger.colorsEnabled = true;
+    const vars = await getEnvVars(path.resolve(args.dir), logger);
+    let output;
+    if (
+      options.fmt === "json" &&
+      ["stdout", "stdin"].includes(options.output)
+    ) {
+      output = colorize(vars, { pretty: true });
+    } else if (options.fmt === "json") {
+      output = JSON.stringify(vars, null, 2);
+    }
+
+    if (options.output === "stdout") {
+      console.log(output);
+    } else if (options.output === "stderr") {
+      console.error(output);
+    } else {
+      await fs.writeFile(path.resolve(options.output), output, "utf8");
+    }
+  });
+
+program.run();

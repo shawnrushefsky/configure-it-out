@@ -1,0 +1,3092 @@
+[
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/config.js",
+    "loc": {
+      "start": {
+        "line": 80,
+        "column": 17
+      },
+      "end": {
+        "line": 80,
+        "column": 48
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "ACCESS_FLAGS_BRANCH"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/config.js",
+    "loc": {
+      "start": {
+        "line": 79,
+        "column": 15
+      },
+      "end": {
+        "line": 79,
+        "column": 44
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "ACCESS_FLAGS_FILE"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/config.js",
+    "loc": {
+      "start": {
+        "line": 78,
+        "column": 15
+      },
+      "end": {
+        "line": 78,
+        "column": 44
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "ACCESS_FLAGS_REPO"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/config.js",
+    "loc": {
+      "start": {
+        "line": 82,
+        "column": 18
+      },
+      "end": {
+        "line": 82,
+        "column": 46
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "APP_TOKEN_BRANCH"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/config.js",
+    "loc": {
+      "start": {
+        "line": 81,
+        "column": 16
+      },
+      "end": {
+        "line": 81,
+        "column": 42
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "APP_TOKEN_REPO"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/config.js",
+    "loc": {
+      "start": {
+        "line": 22,
+        "column": 32
+      },
+      "end": {
+        "line": 22,
+        "column": 62
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "AWS_DEFAULT_REGION"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/@aws-sdk/client-s3/node_modules/@aws-sdk/util-defaults-mode-node/dist-es/resolveDefaultsModeConfig.js",
+    "loc": {
+      "start": {
+        "line": 83,
+        "column": 86
+      },
+      "end": {
+        "line": 83,
+        "column": 121
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "AWS_DEFAULT_REGION_ENV"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/@aws-sdk/client-s3/node_modules/@aws-sdk/util-defaults-mode-node/dist-es/resolveDefaultsModeConfig.js",
+    "loc": {
+      "start": {
+        "line": 84,
+        "column": 99
+      },
+      "end": {
+        "line": 84,
+        "column": 134
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "AWS_DEFAULT_REGION_ENV"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/@aws-sdk/util-defaults-mode-node/dist-es/resolveDefaultsModeConfig.js",
+    "loc": {
+      "start": {
+        "line": 83,
+        "column": 86
+      },
+      "end": {
+        "line": 83,
+        "column": 121
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "AWS_DEFAULT_REGION_ENV"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/@aws-sdk/util-defaults-mode-node/dist-es/resolveDefaultsModeConfig.js",
+    "loc": {
+      "start": {
+        "line": 84,
+        "column": 99
+      },
+      "end": {
+        "line": 84,
+        "column": 134
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "AWS_DEFAULT_REGION_ENV"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/@aws-sdk/client-s3/node_modules/@aws-sdk/util-defaults-mode-node/dist-es/resolveDefaultsModeConfig.js",
+    "loc": {
+      "start": {
+        "line": 83,
+        "column": 20
+      },
+      "end": {
+        "line": 83,
+        "column": 50
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "AWS_EXECUTION_ENV"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/@aws-sdk/util-defaults-mode-node/dist-es/resolveDefaultsModeConfig.js",
+    "loc": {
+      "start": {
+        "line": 83,
+        "column": 20
+      },
+      "end": {
+        "line": 83,
+        "column": 50
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "AWS_EXECUTION_ENV"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/config.js",
+    "loc": {
+      "start": {
+        "line": 22,
+        "column": 6
+      },
+      "end": {
+        "line": 22,
+        "column": 28
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "AWS_REGION"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/@aws-sdk/client-s3/node_modules/@aws-sdk/util-defaults-mode-node/dist-es/resolveDefaultsModeConfig.js",
+    "loc": {
+      "start": {
+        "line": 83,
+        "column": 55
+      },
+      "end": {
+        "line": 83,
+        "column": 82
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "AWS_REGION_ENV"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/@aws-sdk/client-s3/node_modules/@aws-sdk/util-defaults-mode-node/dist-es/resolveDefaultsModeConfig.js",
+    "loc": {
+      "start": {
+        "line": 84,
+        "column": 37
+      },
+      "end": {
+        "line": 84,
+        "column": 64
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "AWS_REGION_ENV"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/@aws-sdk/util-defaults-mode-node/dist-es/resolveDefaultsModeConfig.js",
+    "loc": {
+      "start": {
+        "line": 83,
+        "column": 55
+      },
+      "end": {
+        "line": 83,
+        "column": 82
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "AWS_REGION_ENV"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/@aws-sdk/util-defaults-mode-node/dist-es/resolveDefaultsModeConfig.js",
+    "loc": {
+      "start": {
+        "line": 84,
+        "column": 37
+      },
+      "end": {
+        "line": 84,
+        "column": 64
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "AWS_REGION_ENV"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/chai/karma.conf.js",
+    "loc": {
+      "start": {
+        "line": 26,
+        "column": 10
+      },
+      "end": {
+        "line": 26,
+        "column": 35
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "CHAI_TEST_ENV"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/chokidar/index.js",
+    "loc": {
+      "start": {
+        "line": 353,
+        "column": 22
+      },
+      "end": {
+        "line": 353,
+        "column": 51
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "CHOKIDAR_INTERVAL"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/chokidar/lib/fsevents-handler.js",
+    "loc": {
+      "start": {
+        "line": 11,
+        "column": 6
+      },
+      "end": {
+        "line": 11,
+        "column": 55
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "CHOKIDAR_PRINT_FSEVENTS_REQUIRE_ERROR"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/chokidar/index.js",
+    "loc": {
+      "start": {
+        "line": 341,
+        "column": 18
+      },
+      "end": {
+        "line": 341,
+        "column": 49
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "CHOKIDAR_USEPOLLING"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/is-unicode-supported/index.js",
+    "loc": {
+      "start": {
+        "line": 8,
+        "column": 16
+      },
+      "end": {
+        "line": 8,
+        "column": 30
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "CI"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/config.js",
+    "loc": {
+      "start": {
+        "line": 48,
+        "column": 12
+      },
+      "end": {
+        "line": 48,
+        "column": 42
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "CLUSTER_MAP_BUCKET"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/config.js",
+    "loc": {
+      "start": {
+        "line": 49,
+        "column": 9
+      },
+      "end": {
+        "line": 49,
+        "column": 36
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "CLUSTER_MAP_KEY"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/config.js",
+    "loc": {
+      "start": {
+        "line": 50,
+        "column": 12
+      },
+      "end": {
+        "line": 50,
+        "column": 42
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "CLUSTER_MAP_REGION"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/argparse/argparse.js",
+    "loc": {
+      "start": {
+        "line": 98,
+        "column": 18
+      },
+      "end": {
+        "line": 98,
+        "column": 37
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "COLUMNS"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/@dabh/diagnostics/adapters/process.env.js",
+    "loc": {
+      "start": {
+        "line": 10,
+        "column": 9
+      },
+      "end": {
+        "line": 10,
+        "column": 26
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "DEBUG"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/debug/src/browser.js",
+    "loc": {
+      "start": {
+        "line": 227,
+        "column": 6
+      },
+      "end": {
+        "line": 227,
+        "column": 23
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "DEBUG"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/debug/src/node.js",
+    "loc": {
+      "start": {
+        "line": 205,
+        "column": 2
+      },
+      "end": {
+        "line": 205,
+        "column": 19
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "DEBUG"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/debug/src/node.js",
+    "loc": {
+      "start": {
+        "line": 209,
+        "column": 9
+      },
+      "end": {
+        "line": 209,
+        "column": 26
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "DEBUG"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/debug/src/node.js",
+    "loc": {
+      "start": {
+        "line": 221,
+        "column": 8
+      },
+      "end": {
+        "line": 221,
+        "column": 25
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "DEBUG"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/mocha/mocha.js",
+    "loc": {
+      "start": {
+        "line": 12163,
+        "column": 8
+      },
+      "end": {
+        "line": 12163,
+        "column": 25
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "DEBUG"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/config.js",
+    "loc": {
+      "start": {
+        "line": 188,
+        "column": 4
+      },
+      "end": {
+        "line": 188,
+        "column": 35
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "DEFAULT_AWS_ACCOUNT"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/config.js",
+    "loc": {
+      "start": {
+        "line": 190,
+        "column": 4
+      },
+      "end": {
+        "line": 190,
+        "column": 35
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "DEFAULT_AWS_ACCOUNT"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/@dabh/diagnostics/adapters/process.env.js",
+    "loc": {
+      "start": {
+        "line": 10,
+        "column": 30
+      },
+      "end": {
+        "line": 10,
+        "column": 53
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "DIAGNOSTICS"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/config.js",
+    "loc": {
+      "start": {
+        "line": 59,
+        "column": 6
+      },
+      "end": {
+        "line": 59,
+        "column": 42
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "DYNAMO_DEPLOYMENTS_TABLE"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/config.js",
+    "loc": {
+      "start": {
+        "line": 54,
+        "column": 14
+      },
+      "end": {
+        "line": 54,
+        "column": 41
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "DYNAMO_ENDPOINT"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/config.js",
+    "loc": {
+      "start": {
+        "line": 55,
+        "column": 15
+      },
+      "end": {
+        "line": 55,
+        "column": 45
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "DYNAMO_FILES_TABLE"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/config.js",
+    "loc": {
+      "start": {
+        "line": 57,
+        "column": 13
+      },
+      "end": {
+        "line": 57,
+        "column": 40
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "DYNAMO_KV_TABLE"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/config.js",
+    "loc": {
+      "start": {
+        "line": 56,
+        "column": 15
+      },
+      "end": {
+        "line": 56,
+        "column": 44
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "DYNAMO_REPO_TABLE"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/@aws-sdk/client-s3/node_modules/@aws-sdk/credential-provider-imds/dist-es/fromContainerMetadata.js",
+    "loc": {
+      "start": {
+        "line": 40,
+        "column": 20
+      },
+      "end": {
+        "line": 40,
+        "column": 52
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "ENV_CMDS_AUTH_TOKEN"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/@aws-sdk/client-s3/node_modules/@aws-sdk/credential-provider-imds/dist-es/fromContainerMetadata.js",
+    "loc": {
+      "start": {
+        "line": 41,
+        "column": 95
+      },
+      "end": {
+        "line": 41,
+        "column": 127
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "ENV_CMDS_AUTH_TOKEN"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/@aws-sdk/credential-provider-imds/dist-es/fromContainerMetadata.js",
+    "loc": {
+      "start": {
+        "line": 40,
+        "column": 20
+      },
+      "end": {
+        "line": 40,
+        "column": 52
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "ENV_CMDS_AUTH_TOKEN"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/@aws-sdk/credential-provider-imds/dist-es/fromContainerMetadata.js",
+    "loc": {
+      "start": {
+        "line": 41,
+        "column": 95
+      },
+      "end": {
+        "line": 41,
+        "column": 127
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "ENV_CMDS_AUTH_TOKEN"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/@aws-sdk/client-s3/node_modules/@aws-sdk/credential-provider-imds/dist-es/fromContainerMetadata.js",
+    "loc": {
+      "start": {
+        "line": 68,
+        "column": 12
+      },
+      "end": {
+        "line": 68,
+        "column": 42
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "ENV_CMDS_FULL_URI"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/@aws-sdk/client-s3/node_modules/@aws-sdk/credential-provider-imds/dist-es/fromContainerMetadata.js",
+    "loc": {
+      "start": {
+        "line": 69,
+        "column": 27
+      },
+      "end": {
+        "line": 69,
+        "column": 57
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "ENV_CMDS_FULL_URI"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/@aws-sdk/client-s3/node_modules/@aws-sdk/credential-provider-node/dist-es/remoteProvider.js",
+    "loc": {
+      "start": {
+        "line": 6,
+        "column": 46
+      },
+      "end": {
+        "line": 6,
+        "column": 76
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "ENV_CMDS_FULL_URI"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/@aws-sdk/credential-provider-imds/dist-es/fromContainerMetadata.js",
+    "loc": {
+      "start": {
+        "line": 68,
+        "column": 12
+      },
+      "end": {
+        "line": 68,
+        "column": 42
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "ENV_CMDS_FULL_URI"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/@aws-sdk/credential-provider-imds/dist-es/fromContainerMetadata.js",
+    "loc": {
+      "start": {
+        "line": 69,
+        "column": 27
+      },
+      "end": {
+        "line": 69,
+        "column": 57
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "ENV_CMDS_FULL_URI"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/@aws-sdk/credential-provider-node/dist-es/remoteProvider.js",
+    "loc": {
+      "start": {
+        "line": 6,
+        "column": 46
+      },
+      "end": {
+        "line": 6,
+        "column": 76
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "ENV_CMDS_FULL_URI"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/@aws-sdk/client-s3/node_modules/@aws-sdk/credential-provider-imds/dist-es/fromContainerMetadata.js",
+    "loc": {
+      "start": {
+        "line": 62,
+        "column": 12
+      },
+      "end": {
+        "line": 62,
+        "column": 46
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "ENV_CMDS_RELATIVE_URI"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/@aws-sdk/client-s3/node_modules/@aws-sdk/credential-provider-imds/dist-es/fromContainerMetadata.js",
+    "loc": {
+      "start": {
+        "line": 65,
+        "column": 26
+      },
+      "end": {
+        "line": 65,
+        "column": 60
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "ENV_CMDS_RELATIVE_URI"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/@aws-sdk/client-s3/node_modules/@aws-sdk/credential-provider-node/dist-es/remoteProvider.js",
+    "loc": {
+      "start": {
+        "line": 6,
+        "column": 8
+      },
+      "end": {
+        "line": 6,
+        "column": 42
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "ENV_CMDS_RELATIVE_URI"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/@aws-sdk/credential-provider-imds/dist-es/fromContainerMetadata.js",
+    "loc": {
+      "start": {
+        "line": 62,
+        "column": 12
+      },
+      "end": {
+        "line": 62,
+        "column": 46
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "ENV_CMDS_RELATIVE_URI"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/@aws-sdk/credential-provider-imds/dist-es/fromContainerMetadata.js",
+    "loc": {
+      "start": {
+        "line": 65,
+        "column": 26
+      },
+      "end": {
+        "line": 65,
+        "column": 60
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "ENV_CMDS_RELATIVE_URI"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/@aws-sdk/credential-provider-node/dist-es/remoteProvider.js",
+    "loc": {
+      "start": {
+        "line": 6,
+        "column": 8
+      },
+      "end": {
+        "line": 6,
+        "column": 42
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "ENV_CMDS_RELATIVE_URI"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/@aws-sdk/client-s3/node_modules/@aws-sdk/shared-ini-file-loader/dist-es/getConfigFilepath.js",
+    "loc": {
+      "start": {
+        "line": 4,
+        "column": 52
+      },
+      "end": {
+        "line": 4,
+        "column": 80
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "ENV_CONFIG_PATH"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/@aws-sdk/shared-ini-file-loader/dist-es/getConfigFilepath.js",
+    "loc": {
+      "start": {
+        "line": 4,
+        "column": 52
+      },
+      "end": {
+        "line": 4,
+        "column": 80
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "ENV_CONFIG_PATH"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/@aws-sdk/client-s3/node_modules/@aws-sdk/shared-ini-file-loader/dist-es/getCredentialsFilepath.js",
+    "loc": {
+      "start": {
+        "line": 5,
+        "column": 11
+      },
+      "end": {
+        "line": 5,
+        "column": 44
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "ENV_CREDENTIALS_PATH"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/@aws-sdk/shared-ini-file-loader/dist-es/getCredentialsFilepath.js",
+    "loc": {
+      "start": {
+        "line": 5,
+        "column": 11
+      },
+      "end": {
+        "line": 5,
+        "column": 44
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "ENV_CREDENTIALS_PATH"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/@aws-sdk/client-s3/node_modules/@aws-sdk/credential-provider-env/dist-es/fromEnv.js",
+    "loc": {
+      "start": {
+        "line": 13,
+        "column": 17
+      },
+      "end": {
+        "line": 13,
+        "column": 44
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "ENV_EXPIRATION"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/@aws-sdk/credential-provider-env/dist-es/fromEnv.js",
+    "loc": {
+      "start": {
+        "line": 13,
+        "column": 17
+      },
+      "end": {
+        "line": 13,
+        "column": 44
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "ENV_EXPIRATION"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/@aws-sdk/client-s3/node_modules/@aws-sdk/credential-provider-node/dist-es/remoteProvider.js",
+    "loc": {
+      "start": {
+        "line": 9,
+        "column": 8
+      },
+      "end": {
+        "line": 9,
+        "column": 38
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "ENV_IMDS_DISABLED"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/@aws-sdk/client-s3/node_modules/@aws-sdk/util-defaults-mode-node/dist-es/resolveDefaultsModeConfig.js",
+    "loc": {
+      "start": {
+        "line": 86,
+        "column": 22
+      },
+      "end": {
+        "line": 86,
+        "column": 52
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "ENV_IMDS_DISABLED"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/@aws-sdk/credential-provider-node/dist-es/remoteProvider.js",
+    "loc": {
+      "start": {
+        "line": 9,
+        "column": 8
+      },
+      "end": {
+        "line": 9,
+        "column": 38
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "ENV_IMDS_DISABLED"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/@aws-sdk/util-defaults-mode-node/dist-es/resolveDefaultsModeConfig.js",
+    "loc": {
+      "start": {
+        "line": 86,
+        "column": 22
+      },
+      "end": {
+        "line": 86,
+        "column": 52
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "ENV_IMDS_DISABLED"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/@aws-sdk/client-s3/node_modules/@aws-sdk/credential-provider-env/dist-es/fromEnv.js",
+    "loc": {
+      "start": {
+        "line": 10,
+        "column": 22
+      },
+      "end": {
+        "line": 10,
+        "column": 42
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "ENV_KEY"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/@aws-sdk/credential-provider-env/dist-es/fromEnv.js",
+    "loc": {
+      "start": {
+        "line": 10,
+        "column": 22
+      },
+      "end": {
+        "line": 10,
+        "column": 42
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "ENV_KEY"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/@aws-sdk/client-s3/node_modules/@aws-sdk/middleware-recursion-detection/dist-cjs/index.js",
+    "loc": {
+      "start": {
+        "line": 15,
+        "column": 25
+      },
+      "end": {
+        "line": 15,
+        "column": 62
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "ENV_LAMBDA_FUNCTION_NAME"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/@aws-sdk/client-s3/node_modules/@aws-sdk/middleware-recursion-detection/dist-es/index.js",
+    "loc": {
+      "start": {
+        "line": 17,
+        "column": 31
+      },
+      "end": {
+        "line": 17,
+        "column": 68
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "ENV_LAMBDA_FUNCTION_NAME"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/@aws-sdk/middleware-recursion-detection/dist-cjs/index.js",
+    "loc": {
+      "start": {
+        "line": 15,
+        "column": 25
+      },
+      "end": {
+        "line": 15,
+        "column": 62
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "ENV_LAMBDA_FUNCTION_NAME"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/@aws-sdk/middleware-recursion-detection/dist-es/index.js",
+    "loc": {
+      "start": {
+        "line": 17,
+        "column": 31
+      },
+      "end": {
+        "line": 17,
+        "column": 68
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "ENV_LAMBDA_FUNCTION_NAME"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/@aws-sdk/client-s3/node_modules/@aws-sdk/credential-provider-node/dist-es/defaultProvider.js",
+    "loc": {
+      "start": {
+        "line": 12,
+        "column": 95
+      },
+      "end": {
+        "line": 12,
+        "column": 119
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "ENV_PROFILE"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/@aws-sdk/client-s3/node_modules/@aws-sdk/shared-ini-file-loader/dist-es/getProfileName.js",
+    "loc": {
+      "start": {
+        "line": 4,
+        "column": 27
+      },
+      "end": {
+        "line": 4,
+        "column": 51
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "ENV_PROFILE"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/@aws-sdk/credential-provider-node/dist-es/defaultProvider.js",
+    "loc": {
+      "start": {
+        "line": 12,
+        "column": 95
+      },
+      "end": {
+        "line": 12,
+        "column": 119
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "ENV_PROFILE"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/@aws-sdk/shared-ini-file-loader/dist-es/getProfileName.js",
+    "loc": {
+      "start": {
+        "line": 4,
+        "column": 27
+      },
+      "end": {
+        "line": 4,
+        "column": 51
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "ENV_PROFILE"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/@aws-sdk/client-s3/node_modules/@aws-sdk/credential-provider-web-identity/dist-cjs/fromTokenFile.js",
+    "loc": {
+      "start": {
+        "line": 17,
+        "column": 117
+      },
+      "end": {
+        "line": 17,
+        "column": 142
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "ENV_ROLE_ARN"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/@aws-sdk/client-s3/node_modules/@aws-sdk/credential-provider-web-identity/dist-es/fromTokenFile.js",
+    "loc": {
+      "start": {
+        "line": 19,
+        "column": 115
+      },
+      "end": {
+        "line": 19,
+        "column": 140
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "ENV_ROLE_ARN"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/@aws-sdk/credential-provider-web-identity/dist-cjs/fromTokenFile.js",
+    "loc": {
+      "start": {
+        "line": 17,
+        "column": 117
+      },
+      "end": {
+        "line": 17,
+        "column": 142
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "ENV_ROLE_ARN"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/@aws-sdk/credential-provider-web-identity/dist-es/fromTokenFile.js",
+    "loc": {
+      "start": {
+        "line": 19,
+        "column": 115
+      },
+      "end": {
+        "line": 19,
+        "column": 140
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "ENV_ROLE_ARN"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/@aws-sdk/client-s3/node_modules/@aws-sdk/credential-provider-web-identity/dist-cjs/fromTokenFile.js",
+    "loc": {
+      "start": {
+        "line": 18,
+        "column": 133
+      },
+      "end": {
+        "line": 18,
+        "column": 167
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "ENV_ROLE_SESSION_NAME"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/@aws-sdk/client-s3/node_modules/@aws-sdk/credential-provider-web-identity/dist-es/fromTokenFile.js",
+    "loc": {
+      "start": {
+        "line": 20,
+        "column": 131
+      },
+      "end": {
+        "line": 20,
+        "column": 165
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "ENV_ROLE_SESSION_NAME"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/@aws-sdk/credential-provider-web-identity/dist-cjs/fromTokenFile.js",
+    "loc": {
+      "start": {
+        "line": 18,
+        "column": 133
+      },
+      "end": {
+        "line": 18,
+        "column": 167
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "ENV_ROLE_SESSION_NAME"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/@aws-sdk/credential-provider-web-identity/dist-es/fromTokenFile.js",
+    "loc": {
+      "start": {
+        "line": 20,
+        "column": 131
+      },
+      "end": {
+        "line": 20,
+        "column": 165
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "ENV_ROLE_SESSION_NAME"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/@aws-sdk/client-s3/node_modules/@aws-sdk/credential-provider-env/dist-es/fromEnv.js",
+    "loc": {
+      "start": {
+        "line": 11,
+        "column": 26
+      },
+      "end": {
+        "line": 11,
+        "column": 49
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "ENV_SECRET"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/@aws-sdk/credential-provider-env/dist-es/fromEnv.js",
+    "loc": {
+      "start": {
+        "line": 11,
+        "column": 26
+      },
+      "end": {
+        "line": 11,
+        "column": 49
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "ENV_SECRET"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/@aws-sdk/client-s3/node_modules/@aws-sdk/credential-provider-env/dist-es/fromEnv.js",
+    "loc": {
+      "start": {
+        "line": 12,
+        "column": 23
+      },
+      "end": {
+        "line": 12,
+        "column": 47
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "ENV_SESSION"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/@aws-sdk/credential-provider-env/dist-es/fromEnv.js",
+    "loc": {
+      "start": {
+        "line": 12,
+        "column": 23
+      },
+      "end": {
+        "line": 12,
+        "column": 47
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "ENV_SESSION"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/@aws-sdk/client-s3/node_modules/@aws-sdk/credential-provider-web-identity/dist-cjs/fromTokenFile.js",
+    "loc": {
+      "start": {
+        "line": 16,
+        "column": 143
+      },
+      "end": {
+        "line": 16,
+        "column": 170
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "ENV_TOKEN_FILE"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/@aws-sdk/client-s3/node_modules/@aws-sdk/credential-provider-web-identity/dist-es/fromTokenFile.js",
+    "loc": {
+      "start": {
+        "line": 18,
+        "column": 141
+      },
+      "end": {
+        "line": 18,
+        "column": 168
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "ENV_TOKEN_FILE"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/@aws-sdk/credential-provider-web-identity/dist-cjs/fromTokenFile.js",
+    "loc": {
+      "start": {
+        "line": 16,
+        "column": 143
+      },
+      "end": {
+        "line": 16,
+        "column": 170
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "ENV_TOKEN_FILE"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/@aws-sdk/credential-provider-web-identity/dist-es/fromTokenFile.js",
+    "loc": {
+      "start": {
+        "line": 18,
+        "column": 141
+      },
+      "end": {
+        "line": 18,
+        "column": 168
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "ENV_TOKEN_FILE"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/@aws-sdk/client-s3/node_modules/@aws-sdk/middleware-recursion-detection/dist-cjs/index.js",
+    "loc": {
+      "start": {
+        "line": 16,
+        "column": 20
+      },
+      "end": {
+        "line": 16,
+        "column": 45
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "ENV_TRACE_ID"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/@aws-sdk/client-s3/node_modules/@aws-sdk/middleware-recursion-detection/dist-es/index.js",
+    "loc": {
+      "start": {
+        "line": 18,
+        "column": 26
+      },
+      "end": {
+        "line": 18,
+        "column": 51
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "ENV_TRACE_ID"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/@aws-sdk/middleware-recursion-detection/dist-cjs/index.js",
+    "loc": {
+      "start": {
+        "line": 16,
+        "column": 20
+      },
+      "end": {
+        "line": 16,
+        "column": 45
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "ENV_TRACE_ID"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/@aws-sdk/middleware-recursion-detection/dist-es/index.js",
+    "loc": {
+      "start": {
+        "line": 18,
+        "column": 26
+      },
+      "end": {
+        "line": 18,
+        "column": 51
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "ENV_TRACE_ID"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/config.js",
+    "loc": {
+      "start": {
+        "line": 42,
+        "column": 14
+      },
+      "end": {
+        "line": 42,
+        "column": 50
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "EPIQUERY_TEMPLATE_BRANCH"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/config.js",
+    "loc": {
+      "start": {
+        "line": 41,
+        "column": 12
+      },
+      "end": {
+        "line": 41,
+        "column": 46
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "EPIQUERY_TEMPLATE_REPO"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/ansi-colors/index.js",
+    "loc": {
+      "start": {
+        "line": 14,
+        "column": 21
+      },
+      "end": {
+        "line": 14,
+        "column": 44
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "FORCE_COLOR"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/config.js",
+    "loc": {
+      "start": {
+        "line": 15,
+        "column": 18
+      },
+      "end": {
+        "line": 15,
+        "column": 35
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "FORKS"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/config.js",
+    "loc": {
+      "start": {
+        "line": 37,
+        "column": 12
+      },
+      "end": {
+        "line": 37,
+        "column": 37
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "GITHUB_OWNERS"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/config.js",
+    "loc": {
+      "start": {
+        "line": 38,
+        "column": 8
+      },
+      "end": {
+        "line": 38,
+        "column": 33
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "GITHUB_OWNERS"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/config.js",
+    "loc": {
+      "start": {
+        "line": 11,
+        "column": 11
+      },
+      "end": {
+        "line": 11,
+        "column": 33
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "GITHUB_SHA"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/config.js",
+    "loc": {
+      "start": {
+        "line": 44,
+        "column": 11
+      },
+      "end": {
+        "line": 44,
+        "column": 35
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "GITHUB_TOKEN"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/config.js",
+    "loc": {
+      "start": {
+        "line": 6,
+        "column": 15
+      },
+      "end": {
+        "line": 6,
+        "column": 38
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "HEALTHCHECK"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/superagent/lib/node/index.js",
+    "loc": {
+      "start": {
+        "line": 189,
+        "column": 30
+      },
+      "end": {
+        "line": 189,
+        "column": 52
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "HTTP2_TEST"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/config.js",
+    "loc": {
+      "start": {
+        "line": 13,
+        "column": 12
+      },
+      "end": {
+        "line": 13,
+        "column": 33
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "LOG_LEVEL"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/config.js",
+    "loc": {
+      "start": {
+        "line": 203,
+        "column": 4
+      },
+      "end": {
+        "line": 203,
+        "column": 36
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "MANAGED_AWS_ACCOUNTS"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/config.js",
+    "loc": {
+      "start": {
+        "line": 204,
+        "column": 18
+      },
+      "end": {
+        "line": 204,
+        "column": 50
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "MANAGED_AWS_ACCOUNTS"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/mocha/lib/reporters/base.js",
+    "loc": {
+      "start": {
+        "line": 51,
+        "column": 27
+      },
+      "end": {
+        "line": 51,
+        "column": 51
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "MOCHA_COLORS"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/mocha/mocha.js",
+    "loc": {
+      "start": {
+        "line": 15299,
+        "column": 29
+      },
+      "end": {
+        "line": 15299,
+        "column": 53
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "MOCHA_COLORS"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/fs.realpath/old.js",
+    "loc": {
+      "start": {
+        "line": 28,
+        "column": 12
+      },
+      "end": {
+        "line": 28,
+        "column": 34
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "NODE_DEBUG"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/fs.realpath/old.js",
+    "loc": {
+      "start": {
+        "line": 28,
+        "column": 48
+      },
+      "end": {
+        "line": 28,
+        "column": 70
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "NODE_DEBUG"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/nise/nise.js",
+    "loc": {
+      "start": {
+        "line": 8173,
+        "column": 19
+      },
+      "end": {
+        "line": 8173,
+        "column": 41
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "NODE_DEBUG"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/semver/internal/debug.js",
+    "loc": {
+      "start": {
+        "line": 4,
+        "column": 2
+      },
+      "end": {
+        "line": 4,
+        "column": 24
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "NODE_DEBUG"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/semver/internal/debug.js",
+    "loc": {
+      "start": {
+        "line": 5,
+        "column": 21
+      },
+      "end": {
+        "line": 5,
+        "column": 43
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "NODE_DEBUG"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/sinon/pkg/sinon-esm.js",
+    "loc": {
+      "start": {
+        "line": 11950,
+        "column": 19
+      },
+      "end": {
+        "line": 11950,
+        "column": 41
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "NODE_DEBUG"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/sinon/pkg/sinon.js",
+    "loc": {
+      "start": {
+        "line": 11945,
+        "column": 19
+      },
+      "end": {
+        "line": 11945,
+        "column": 41
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "NODE_DEBUG"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/@dabh/diagnostics/browser/index.js",
+    "loc": {
+      "start": {
+        "line": 4,
+        "column": 4
+      },
+      "end": {
+        "line": 4,
+        "column": 24
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "NODE_ENV"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/@dabh/diagnostics/node/index.js",
+    "loc": {
+      "start": {
+        "line": 4,
+        "column": 4
+      },
+      "end": {
+        "line": 4,
+        "column": 24
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "NODE_ENV"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/hpagent/test/utils.js",
+    "loc": {
+      "start": {
+        "line": 4,
+        "column": 0
+      },
+      "end": {
+        "line": 4,
+        "column": 40
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "NODE_TLS_REJECT_UNAUTHORIZED"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/superagent/lib/node/index.js",
+    "loc": {
+      "start": {
+        "line": 828,
+        "column": 101
+      },
+      "end": {
+        "line": 828,
+        "column": 141
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "NODE_TLS_REJECT_UNAUTHORIZED"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/@opensearch-project/opensearch/index.js",
+    "loc": {
+      "start": {
+        "line": 136,
+        "column": 8
+      },
+      "end": {
+        "line": 136,
+        "column": 51
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "OPENSEARCH_CLIENT_APIVERSIONING"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/@opensearch-project/opensearch/lib/Transport.js",
+    "loc": {
+      "start": {
+        "line": 87,
+        "column": 27
+      },
+      "end": {
+        "line": 87,
+        "column": 70
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "OPENSEARCH_CLIENT_APIVERSIONING"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/config.js",
+    "loc": {
+      "start": {
+        "line": 64,
+        "column": 6
+      },
+      "end": {
+        "line": 64,
+        "column": 46
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "OPENSEARCH_DEPLOYMENTS_INDEX"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/config.js",
+    "loc": {
+      "start": {
+        "line": 72,
+        "column": 10
+      },
+      "end": {
+        "line": 72,
+        "column": 37
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "OPENSEARCH_HOST"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/config.js",
+    "loc": {
+      "start": {
+        "line": 71,
+        "column": 14
+      },
+      "end": {
+        "line": 71,
+        "column": 45
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "OPENSEARCH_PASSWORD"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/config.js",
+    "loc": {
+      "start": {
+        "line": 73,
+        "column": 17
+      },
+      "end": {
+        "line": 73,
+        "column": 44
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "OPENSEARCH_PORT"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/config.js",
+    "loc": {
+      "start": {
+        "line": 74,
+        "column": 14
+      },
+      "end": {
+        "line": 74,
+        "column": 45
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "OPENSEARCH_PROTOCOL"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/config.js",
+    "loc": {
+      "start": {
+        "line": 70,
+        "column": 14
+      },
+      "end": {
+        "line": 70,
+        "column": 45
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "OPENSEARCH_USERNAME"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/pino/test/helper.js",
+    "loc": {
+      "start": {
+        "line": 61,
+        "column": 20
+      },
+      "end": {
+        "line": 61,
+        "column": 64
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "PINO_TEST_WAIT_WATCHFILE_TIMEOUT"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/pino/test/helper.js",
+    "loc": {
+      "start": {
+        "line": 86,
+        "column": 20
+      },
+      "end": {
+        "line": 86,
+        "column": 60
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "PINO_TEST_WAIT_WRITE_TIMEOUT"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/config.js",
+    "loc": {
+      "start": {
+        "line": 9,
+        "column": 17
+      },
+      "end": {
+        "line": 9,
+        "column": 33
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "PORT"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/nise/lib/fake-server/index.js",
+    "loc": {
+      "start": {
+        "line": 36,
+        "column": 14
+      },
+      "end": {
+        "line": 36,
+        "column": 30
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "PORT"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/nise/nise.js",
+    "loc": {
+      "start": {
+        "line": 367,
+        "column": 14
+      },
+      "end": {
+        "line": 367,
+        "column": 30
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "PORT"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/sinon/pkg/sinon-esm.js",
+    "loc": {
+      "start": {
+        "line": 15395,
+        "column": 14
+      },
+      "end": {
+        "line": 15395,
+        "column": 30
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "PORT"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/sinon/pkg/sinon.js",
+    "loc": {
+      "start": {
+        "line": 15390,
+        "column": 14
+      },
+      "end": {
+        "line": 15390,
+        "column": 30
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "PORT"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/config.js",
+    "loc": {
+      "start": {
+        "line": 233,
+        "column": 4
+      },
+      "end": {
+        "line": 233,
+        "column": 41
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "PRIVATE_SECRET_NAMESPACES"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/config.js",
+    "loc": {
+      "start": {
+        "line": 234,
+        "column": 18
+      },
+      "end": {
+        "line": 234,
+        "column": 55
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "PRIVATE_SECRET_NAMESPACES"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/readable-stream/readable.js",
+    "loc": {
+      "start": {
+        "line": 2,
+        "column": 4
+      },
+      "end": {
+        "line": 2,
+        "column": 31
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "READABLE_STREAM"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/config.js",
+    "loc": {
+      "start": {
+        "line": 177,
+        "column": 18
+      },
+      "end": {
+        "line": 177,
+        "column": 55
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "ROLES_THAT_CAN_SEE_LEGACY"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/config.js",
+    "loc": {
+      "start": {
+        "line": 178,
+        "column": 8
+      },
+      "end": {
+        "line": 178,
+        "column": 45
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "ROLES_THAT_CAN_SEE_LEGACY"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/chai/karma.sauce.js",
+    "loc": {
+      "start": {
+        "line": 12,
+        "column": 28
+      },
+      "end": {
+        "line": 12,
+        "column": 56
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "SAUCE_ACCESS_KEY"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/chai/karma.sauce.js",
+    "loc": {
+      "start": {
+        "line": 11,
+        "column": 26
+      },
+      "end": {
+        "line": 11,
+        "column": 52
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "SAUCE_USERNAME"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/chai/karma.sauce.js",
+    "loc": {
+      "start": {
+        "line": 16,
+        "column": 6
+      },
+      "end": {
+        "line": 16,
+        "column": 28
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "SKIP_SAUCE"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/is-unicode-supported/index.js",
+    "loc": {
+      "start": {
+        "line": 11,
+        "column": 2
+      },
+      "end": {
+        "line": 11,
+        "column": 18
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "TERM"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/is-unicode-supported/index.js",
+    "loc": {
+      "start": {
+        "line": 12,
+        "column": 2
+      },
+      "end": {
+        "line": 12,
+        "column": 18
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "TERM"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/ansi-colors/symbols.js",
+    "loc": {
+      "start": {
+        "line": 3,
+        "column": 16
+      },
+      "end": {
+        "line": 3,
+        "column": 40
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "TERM_PROGRAM"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/is-unicode-supported/index.js",
+    "loc": {
+      "start": {
+        "line": 10,
+        "column": 2
+      },
+      "end": {
+        "line": 10,
+        "column": 26
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "TERM_PROGRAM"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/chai/karma.sauce.js",
+    "loc": {
+      "start": {
+        "line": 18,
+        "column": 15
+      },
+      "end": {
+        "line": 18,
+        "column": 40
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "TRAVIS_BRANCH"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/chai/karma.sauce.js",
+    "loc": {
+      "start": {
+        "line": 22,
+        "column": 15
+      },
+      "end": {
+        "line": 22,
+        "column": 44
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "TRAVIS_JOB_NUMBER"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/chai/karma.sauce.js",
+    "loc": {
+      "start": {
+        "line": 24,
+        "column": 6
+      },
+      "end": {
+        "line": 24,
+        "column": 35
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "TRAVIS_JOB_NUMBER"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/chai/karma.sauce.js",
+    "loc": {
+      "start": {
+        "line": 25,
+        "column": 26
+      },
+      "end": {
+        "line": 25,
+        "column": 55
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "TRAVIS_JOB_NUMBER"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/pino/lib/transport-stream.js",
+    "loc": {
+      "start": {
+        "line": 22,
+        "column": 32
+      },
+      "end": {
+        "line": 22,
+        "column": 55
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "TS_NODE_DEV"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/thread-stream/lib/worker.js",
+    "loc": {
+      "start": {
+        "line": 26,
+        "column": 17
+      },
+      "end": {
+        "line": 26,
+        "column": 40
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "TS_NODE_DEV"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/is-unicode-supported/index.js",
+    "loc": {
+      "start": {
+        "line": 9,
+        "column": 10
+      },
+      "end": {
+        "line": 9,
+        "column": 32
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "WT_SESSION"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/yargs-parser/build/lib/index.js",
+    "loc": {
+      "start": {
+        "line": 10,
+        "column": 50
+      },
+      "end": {
+        "line": 10,
+        "column": 84
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "YARGS_MIN_NODE_VERSION"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/yargs-parser/build/lib/index.js",
+    "loc": {
+      "start": {
+        "line": 11,
+        "column": 13
+      },
+      "end": {
+        "line": 11,
+        "column": 47
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "YARGS_MIN_NODE_VERSION"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/@aws-sdk/client-s3/node_modules/@aws-sdk/util-defaults-mode-node/dist-cjs/resolveDefaultsModeConfig.js",
+    "loc": {
+      "start": {
+        "line": 46,
+        "column": 98
+      },
+      "end": {
+        "line": 46,
+        "column": 145
+      }
+    },
+    "type": "EnvironmentVariable",
+    "computed": "constants_1.AWS_DEFAULT_REGION_ENV"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/@aws-sdk/client-s3/node_modules/@aws-sdk/util-defaults-mode-node/dist-cjs/resolveDefaultsModeConfig.js",
+    "loc": {
+      "start": {
+        "line": 47,
+        "column": 95
+      },
+      "end": {
+        "line": 47,
+        "column": 142
+      }
+    },
+    "type": "EnvironmentVariable",
+    "computed": "constants_1.AWS_DEFAULT_REGION_ENV"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/@aws-sdk/util-defaults-mode-node/dist-cjs/resolveDefaultsModeConfig.js",
+    "loc": {
+      "start": {
+        "line": 46,
+        "column": 98
+      },
+      "end": {
+        "line": 46,
+        "column": 145
+      }
+    },
+    "type": "EnvironmentVariable",
+    "computed": "constants_1.AWS_DEFAULT_REGION_ENV"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/@aws-sdk/util-defaults-mode-node/dist-cjs/resolveDefaultsModeConfig.js",
+    "loc": {
+      "start": {
+        "line": 47,
+        "column": 95
+      },
+      "end": {
+        "line": 47,
+        "column": 142
+      }
+    },
+    "type": "EnvironmentVariable",
+    "computed": "constants_1.AWS_DEFAULT_REGION_ENV"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/@aws-sdk/client-s3/node_modules/@aws-sdk/util-defaults-mode-node/dist-cjs/resolveDefaultsModeConfig.js",
+    "loc": {
+      "start": {
+        "line": 46,
+        "column": 8
+      },
+      "end": {
+        "line": 46,
+        "column": 50
+      }
+    },
+    "type": "EnvironmentVariable",
+    "computed": "constants_1.AWS_EXECUTION_ENV"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/@aws-sdk/util-defaults-mode-node/dist-cjs/resolveDefaultsModeConfig.js",
+    "loc": {
+      "start": {
+        "line": 46,
+        "column": 8
+      },
+      "end": {
+        "line": 46,
+        "column": 50
+      }
+    },
+    "type": "EnvironmentVariable",
+    "computed": "constants_1.AWS_EXECUTION_ENV"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/@aws-sdk/client-s3/node_modules/@aws-sdk/util-defaults-mode-node/dist-cjs/resolveDefaultsModeConfig.js",
+    "loc": {
+      "start": {
+        "line": 46,
+        "column": 55
+      },
+      "end": {
+        "line": 46,
+        "column": 94
+      }
+    },
+    "type": "EnvironmentVariable",
+    "computed": "constants_1.AWS_REGION_ENV"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/@aws-sdk/client-s3/node_modules/@aws-sdk/util-defaults-mode-node/dist-cjs/resolveDefaultsModeConfig.js",
+    "loc": {
+      "start": {
+        "line": 47,
+        "column": 21
+      },
+      "end": {
+        "line": 47,
+        "column": 60
+      }
+    },
+    "type": "EnvironmentVariable",
+    "computed": "constants_1.AWS_REGION_ENV"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/@aws-sdk/util-defaults-mode-node/dist-cjs/resolveDefaultsModeConfig.js",
+    "loc": {
+      "start": {
+        "line": 46,
+        "column": 55
+      },
+      "end": {
+        "line": 46,
+        "column": 94
+      }
+    },
+    "type": "EnvironmentVariable",
+    "computed": "constants_1.AWS_REGION_ENV"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/@aws-sdk/util-defaults-mode-node/dist-cjs/resolveDefaultsModeConfig.js",
+    "loc": {
+      "start": {
+        "line": 47,
+        "column": 21
+      },
+      "end": {
+        "line": 47,
+        "column": 60
+      }
+    },
+    "type": "EnvironmentVariable",
+    "computed": "constants_1.AWS_REGION_ENV"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/@aws-sdk/client-s3/node_modules/@aws-sdk/util-defaults-mode-node/dist-cjs/resolveDefaultsModeConfig.js",
+    "loc": {
+      "start": {
+        "line": 49,
+        "column": 9
+      },
+      "end": {
+        "line": 49,
+        "column": 51
+      }
+    },
+    "type": "EnvironmentVariable",
+    "computed": "constants_1.ENV_IMDS_DISABLED"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/@aws-sdk/util-defaults-mode-node/dist-cjs/resolveDefaultsModeConfig.js",
+    "loc": {
+      "start": {
+        "line": 49,
+        "column": 9
+      },
+      "end": {
+        "line": 49,
+        "column": 51
+      }
+    },
+    "type": "EnvironmentVariable",
+    "computed": "constants_1.ENV_IMDS_DISABLED"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/@aws-sdk/client-s3/node_modules/@aws-sdk/credential-provider-node/dist-cjs/remoteProvider.js",
+    "loc": {
+      "start": {
+        "line": 8,
+        "column": 73
+      },
+      "end": {
+        "line": 8,
+        "column": 130
+      }
+    },
+    "type": "EnvironmentVariable",
+    "computed": "credential_provider_imds_1.ENV_CMDS_FULL_URI"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/@aws-sdk/credential-provider-node/dist-cjs/remoteProvider.js",
+    "loc": {
+      "start": {
+        "line": 8,
+        "column": 73
+      },
+      "end": {
+        "line": 8,
+        "column": 130
+      }
+    },
+    "type": "EnvironmentVariable",
+    "computed": "credential_provider_imds_1.ENV_CMDS_FULL_URI"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/@aws-sdk/client-s3/node_modules/@aws-sdk/credential-provider-node/dist-cjs/remoteProvider.js",
+    "loc": {
+      "start": {
+        "line": 8,
+        "column": 8
+      },
+      "end": {
+        "line": 8,
+        "column": 69
+      }
+    },
+    "type": "EnvironmentVariable",
+    "computed": "credential_provider_imds_1.ENV_CMDS_RELATIVE_URI"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/@aws-sdk/credential-provider-node/dist-cjs/remoteProvider.js",
+    "loc": {
+      "start": {
+        "line": 8,
+        "column": 8
+      },
+      "end": {
+        "line": 8,
+        "column": 69
+      }
+    },
+    "type": "EnvironmentVariable",
+    "computed": "credential_provider_imds_1.ENV_CMDS_RELATIVE_URI"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/@aws-sdk/client-s3/node_modules/@aws-sdk/credential-provider-imds/dist-cjs/fromContainerMetadata.js",
+    "loc": {
+      "start": {
+        "line": 26,
+        "column": 8
+      },
+      "end": {
+        "line": 26,
+        "column": 48
+      }
+    },
+    "type": "EnvironmentVariable",
+    "computed": "exports.ENV_CMDS_AUTH_TOKEN"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/@aws-sdk/client-s3/node_modules/@aws-sdk/credential-provider-imds/dist-cjs/fromContainerMetadata.js",
+    "loc": {
+      "start": {
+        "line": 29,
+        "column": 27
+      },
+      "end": {
+        "line": 29,
+        "column": 67
+      }
+    },
+    "type": "EnvironmentVariable",
+    "computed": "exports.ENV_CMDS_AUTH_TOKEN"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/@aws-sdk/credential-provider-imds/dist-cjs/fromContainerMetadata.js",
+    "loc": {
+      "start": {
+        "line": 26,
+        "column": 8
+      },
+      "end": {
+        "line": 26,
+        "column": 48
+      }
+    },
+    "type": "EnvironmentVariable",
+    "computed": "exports.ENV_CMDS_AUTH_TOKEN"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/@aws-sdk/credential-provider-imds/dist-cjs/fromContainerMetadata.js",
+    "loc": {
+      "start": {
+        "line": 29,
+        "column": 27
+      },
+      "end": {
+        "line": 29,
+        "column": 67
+      }
+    },
+    "type": "EnvironmentVariable",
+    "computed": "exports.ENV_CMDS_AUTH_TOKEN"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/@aws-sdk/client-s3/node_modules/@aws-sdk/credential-provider-imds/dist-cjs/fromContainerMetadata.js",
+    "loc": {
+      "start": {
+        "line": 54,
+        "column": 8
+      },
+      "end": {
+        "line": 54,
+        "column": 46
+      }
+    },
+    "type": "EnvironmentVariable",
+    "computed": "exports.ENV_CMDS_FULL_URI"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/@aws-sdk/client-s3/node_modules/@aws-sdk/credential-provider-imds/dist-cjs/fromContainerMetadata.js",
+    "loc": {
+      "start": {
+        "line": 55,
+        "column": 40
+      },
+      "end": {
+        "line": 55,
+        "column": 78
+      }
+    },
+    "type": "EnvironmentVariable",
+    "computed": "exports.ENV_CMDS_FULL_URI"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/@aws-sdk/credential-provider-imds/dist-cjs/fromContainerMetadata.js",
+    "loc": {
+      "start": {
+        "line": 54,
+        "column": 8
+      },
+      "end": {
+        "line": 54,
+        "column": 46
+      }
+    },
+    "type": "EnvironmentVariable",
+    "computed": "exports.ENV_CMDS_FULL_URI"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/@aws-sdk/credential-provider-imds/dist-cjs/fromContainerMetadata.js",
+    "loc": {
+      "start": {
+        "line": 55,
+        "column": 40
+      },
+      "end": {
+        "line": 55,
+        "column": 78
+      }
+    },
+    "type": "EnvironmentVariable",
+    "computed": "exports.ENV_CMDS_FULL_URI"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/@aws-sdk/client-s3/node_modules/@aws-sdk/credential-provider-imds/dist-cjs/fromContainerMetadata.js",
+    "loc": {
+      "start": {
+        "line": 48,
+        "column": 8
+      },
+      "end": {
+        "line": 48,
+        "column": 50
+      }
+    },
+    "type": "EnvironmentVariable",
+    "computed": "exports.ENV_CMDS_RELATIVE_URI"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/@aws-sdk/client-s3/node_modules/@aws-sdk/credential-provider-imds/dist-cjs/fromContainerMetadata.js",
+    "loc": {
+      "start": {
+        "line": 51,
+        "column": 18
+      },
+      "end": {
+        "line": 51,
+        "column": 60
+      }
+    },
+    "type": "EnvironmentVariable",
+    "computed": "exports.ENV_CMDS_RELATIVE_URI"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/@aws-sdk/credential-provider-imds/dist-cjs/fromContainerMetadata.js",
+    "loc": {
+      "start": {
+        "line": 48,
+        "column": 8
+      },
+      "end": {
+        "line": 48,
+        "column": 50
+      }
+    },
+    "type": "EnvironmentVariable",
+    "computed": "exports.ENV_CMDS_RELATIVE_URI"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/@aws-sdk/credential-provider-imds/dist-cjs/fromContainerMetadata.js",
+    "loc": {
+      "start": {
+        "line": 51,
+        "column": 18
+      },
+      "end": {
+        "line": 51,
+        "column": 60
+      }
+    },
+    "type": "EnvironmentVariable",
+    "computed": "exports.ENV_CMDS_RELATIVE_URI"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/@aws-sdk/client-s3/node_modules/@aws-sdk/shared-ini-file-loader/dist-cjs/getConfigFilepath.js",
+    "loc": {
+      "start": {
+        "line": 7,
+        "column": 32
+      },
+      "end": {
+        "line": 7,
+        "column": 68
+      }
+    },
+    "type": "EnvironmentVariable",
+    "computed": "exports.ENV_CONFIG_PATH"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/@aws-sdk/shared-ini-file-loader/dist-cjs/getConfigFilepath.js",
+    "loc": {
+      "start": {
+        "line": 7,
+        "column": 32
+      },
+      "end": {
+        "line": 7,
+        "column": 68
+      }
+    },
+    "type": "EnvironmentVariable",
+    "computed": "exports.ENV_CONFIG_PATH"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/@aws-sdk/client-s3/node_modules/@aws-sdk/shared-ini-file-loader/dist-cjs/getCredentialsFilepath.js",
+    "loc": {
+      "start": {
+        "line": 7,
+        "column": 37
+      },
+      "end": {
+        "line": 7,
+        "column": 78
+      }
+    },
+    "type": "EnvironmentVariable",
+    "computed": "exports.ENV_CREDENTIALS_PATH"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/@aws-sdk/shared-ini-file-loader/dist-cjs/getCredentialsFilepath.js",
+    "loc": {
+      "start": {
+        "line": 7,
+        "column": 37
+      },
+      "end": {
+        "line": 7,
+        "column": 78
+      }
+    },
+    "type": "EnvironmentVariable",
+    "computed": "exports.ENV_CREDENTIALS_PATH"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/@aws-sdk/client-s3/node_modules/@aws-sdk/credential-provider-env/dist-cjs/fromEnv.js",
+    "loc": {
+      "start": {
+        "line": 13,
+        "column": 19
+      },
+      "end": {
+        "line": 13,
+        "column": 54
+      }
+    },
+    "type": "EnvironmentVariable",
+    "computed": "exports.ENV_EXPIRATION"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/@aws-sdk/credential-provider-env/dist-cjs/fromEnv.js",
+    "loc": {
+      "start": {
+        "line": 13,
+        "column": 19
+      },
+      "end": {
+        "line": 13,
+        "column": 54
+      }
+    },
+    "type": "EnvironmentVariable",
+    "computed": "exports.ENV_EXPIRATION"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/@aws-sdk/client-s3/node_modules/@aws-sdk/credential-provider-node/dist-cjs/remoteProvider.js",
+    "loc": {
+      "start": {
+        "line": 11,
+        "column": 8
+      },
+      "end": {
+        "line": 11,
+        "column": 46
+      }
+    },
+    "type": "EnvironmentVariable",
+    "computed": "exports.ENV_IMDS_DISABLED"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/@aws-sdk/credential-provider-node/dist-cjs/remoteProvider.js",
+    "loc": {
+      "start": {
+        "line": 11,
+        "column": 8
+      },
+      "end": {
+        "line": 11,
+        "column": 46
+      }
+    },
+    "type": "EnvironmentVariable",
+    "computed": "exports.ENV_IMDS_DISABLED"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/@aws-sdk/client-s3/node_modules/@aws-sdk/credential-provider-env/dist-cjs/fromEnv.js",
+    "loc": {
+      "start": {
+        "line": 10,
+        "column": 24
+      },
+      "end": {
+        "line": 10,
+        "column": 52
+      }
+    },
+    "type": "EnvironmentVariable",
+    "computed": "exports.ENV_KEY"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/@aws-sdk/credential-provider-env/dist-cjs/fromEnv.js",
+    "loc": {
+      "start": {
+        "line": 10,
+        "column": 24
+      },
+      "end": {
+        "line": 10,
+        "column": 52
+      }
+    },
+    "type": "EnvironmentVariable",
+    "computed": "exports.ENV_KEY"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/@aws-sdk/client-s3/node_modules/@aws-sdk/shared-ini-file-loader/dist-cjs/getProfileName.js",
+    "loc": {
+      "start": {
+        "line": 6,
+        "column": 49
+      },
+      "end": {
+        "line": 6,
+        "column": 81
+      }
+    },
+    "type": "EnvironmentVariable",
+    "computed": "exports.ENV_PROFILE"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/@aws-sdk/shared-ini-file-loader/dist-cjs/getProfileName.js",
+    "loc": {
+      "start": {
+        "line": 6,
+        "column": 49
+      },
+      "end": {
+        "line": 6,
+        "column": 81
+      }
+    },
+    "type": "EnvironmentVariable",
+    "computed": "exports.ENV_PROFILE"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/@aws-sdk/client-s3/node_modules/@aws-sdk/credential-provider-env/dist-cjs/fromEnv.js",
+    "loc": {
+      "start": {
+        "line": 11,
+        "column": 28
+      },
+      "end": {
+        "line": 11,
+        "column": 59
+      }
+    },
+    "type": "EnvironmentVariable",
+    "computed": "exports.ENV_SECRET"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/@aws-sdk/credential-provider-env/dist-cjs/fromEnv.js",
+    "loc": {
+      "start": {
+        "line": 11,
+        "column": 28
+      },
+      "end": {
+        "line": 11,
+        "column": 59
+      }
+    },
+    "type": "EnvironmentVariable",
+    "computed": "exports.ENV_SECRET"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/@aws-sdk/client-s3/node_modules/@aws-sdk/credential-provider-env/dist-cjs/fromEnv.js",
+    "loc": {
+      "start": {
+        "line": 12,
+        "column": 25
+      },
+      "end": {
+        "line": 12,
+        "column": 57
+      }
+    },
+    "type": "EnvironmentVariable",
+    "computed": "exports.ENV_SESSION"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/@aws-sdk/credential-provider-env/dist-cjs/fromEnv.js",
+    "loc": {
+      "start": {
+        "line": 12,
+        "column": 25
+      },
+      "end": {
+        "line": 12,
+        "column": 57
+      }
+    },
+    "type": "EnvironmentVariable",
+    "computed": "exports.ENV_SESSION"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/debug/src/node.js",
+    "loc": {
+      "start": {
+        "line": 136,
+        "column": 11
+      },
+      "end": {
+        "line": 136,
+        "column": 27
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "key"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/yargs/lib/platform-shims/esm.mjs",
+    "loc": {
+      "start": {
+        "line": 29,
+        "column": 11
+      },
+      "end": {
+        "line": 29,
+        "column": 27
+      }
+    },
+    "type": "EnvironmentVariable",
+    "name": "key"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/@aws-sdk/client-s3/node_modules/@aws-sdk/credential-provider-node/dist-cjs/defaultProvider.js",
+    "loc": {
+      "start": {
+        "line": 12,
+        "column": 123
+      },
+      "end": {
+        "line": 12,
+        "column": 172
+      }
+    },
+    "type": "EnvironmentVariable",
+    "computed": "shared_ini_file_loader_1.ENV_PROFILE"
+  },
+  {
+    "filename": "/home/shawnrushefsky/code/glg/gds-data/node_modules/@aws-sdk/credential-provider-node/dist-cjs/defaultProvider.js",
+    "loc": {
+      "start": {
+        "line": 12,
+        "column": 123
+      },
+      "end": {
+        "line": 12,
+        "column": 172
+      }
+    },
+    "type": "EnvironmentVariable",
+    "computed": "shared_ini_file_loader_1.ENV_PROFILE"
+  }
+]
