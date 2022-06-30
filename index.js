@@ -198,12 +198,36 @@ async function getEnvVars() {
           file: node.filename,
           type: "EnvironmentVariable",
         };
+      } else if (node?.property?.type === "MemberExpression") {
+        return {
+          computed: getObjectNotation(node.property),
+          file: node.filename,
+          type: "EnvironmentVariable",
+        };
       } else {
         console.error(node, node.constructor.name);
       }
     })
     .filter((a) => a);
-  return Array.from(new Set(allVars)).sort();
+  return Array.from(new Set(allVars)).sort((a, b) => {
+    if (a.name < b.name) {
+      return -1;
+    } else if (a.name > b.name) {
+      return 1;
+    } else {
+      return 0;
+    }
+  });
+}
+
+function getObjectNotation(node) {
+  let note = node.object.name;
+  if (node.property.type === "Identifier") {
+    note += "." + node.property.name;
+  } else if (node.property.type === "MemberExpression") {
+    note += "." + getObjectNotation(node.property);
+  }
+  return note;
 }
 
 getEnvVars().then((vars) => {
