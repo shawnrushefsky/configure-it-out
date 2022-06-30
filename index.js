@@ -144,6 +144,7 @@ function getAST(content) {
 async function getEnvVars() {
   const dir = path.resolve(process.argv[2]);
   const contents = await globFiles(dir);
+  const used = new Set();
   const allVars = contents
     .map(({ content, filename }) => {
       try {
@@ -186,20 +187,21 @@ async function getEnvVars() {
     .flat()
     .filter(exists)
     .map((node) => {
+      let answer;
       if (node?.property?.type === "Identifier") {
-        return {
+        answer = {
           name: node.property.name,
           file: node.filename,
           type: "EnvironmentVariable",
         };
       } else if (node?.property?.type === "Literal") {
-        return {
+        answer = {
           name: node.property.value,
           file: node.filename,
           type: "EnvironmentVariable",
         };
       } else if (node?.property?.type === "MemberExpression") {
-        return {
+        answer = {
           computed: getObjectNotation(node.property),
           file: node.filename,
           type: "EnvironmentVariable",
@@ -207,12 +209,18 @@ async function getEnvVars() {
       } else {
         console.error(node, node.constructor.name);
       }
+      if (!used.has(answer.name)) {
+        used.add(answer.name);
+        return answer;
+      }
     })
     .filter((a) => a);
-  return Array.from(new Set(allVars)).sort((a, b) => {
-    if (a.name < b.name) {
+  return allVars.sort((a, b) => {
+    const aName = a.name || a.computed;
+    const bName = b.name || b.computed;
+    if (aName < bName) {
       return -1;
-    } else if (a.name > b.name) {
+    } else if (aName > bName) {
       return 1;
     } else {
       return 0;
