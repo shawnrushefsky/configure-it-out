@@ -158,7 +158,10 @@ async function getEnvVars() {
             node.type === "MemberExpression" && isProcessDotEnv(node),
           maybe: isFromEnv,
         });
-        const nodes = Array.isArray(raw) ? raw : [raw];
+        const nodes = (Array.isArray(raw) ? raw : [raw]).map((node) => {
+          node.filename = filename;
+          return node;
+        });
         if (
           maybes.length &&
           isFrom({ propName: "env", objName: "process", tree: ast })
@@ -167,7 +170,7 @@ async function getEnvVars() {
             ...maybes
               .map(({ id: { properties } }) => {
                 return properties.map((prop) => {
-                  return { property: prop.key };
+                  return { property: prop.key, filename };
                 });
               })
               .flat()
@@ -184,13 +187,22 @@ async function getEnvVars() {
     .filter(exists)
     .map((node) => {
       if (node?.property?.type === "Identifier") {
-        return node.property.name;
+        return {
+          name: node.property.name,
+          file: node.filename,
+          type: "EnvironmentVariable",
+        };
       } else if (node?.property?.type === "Literal") {
-        return node.property.value;
+        return {
+          name: node.property.value,
+          file: node.filename,
+          type: "EnvironmentVariable",
+        };
       } else {
         console.error(node, node.constructor.name);
       }
-    });
+    })
+    .filter((a) => a);
   return Array.from(new Set(allVars)).sort();
 }
 
