@@ -151,11 +151,14 @@ async function getEnvVars(dir, logger) {
   logger.info(`Scanning ${dir}`);
   const contents = await globFiles(dir);
   logger.info(`${contents.length} files found.`);
-  const used = new Set();
-  const bar = new cliProgress.SingleBar({
-    format: "{bar} - {filename}",
-    hideCursor: true,
-  });
+  const bar = new cliProgress.SingleBar(
+    {
+      format: "{bar} - {filename}",
+      hideCursor: true,
+      clearOnComplete: true,
+    },
+    cliProgress.Presets.shades_classic
+  );
   bar.start(contents.length, 0, { filename: "N/A" });
   const allVars = contents
     .map(({ content, filename }) => {
@@ -201,8 +204,6 @@ async function getEnvVars(dir, logger) {
     .map((node) => {
       const { loc, filename } = node;
       const answer = {
-        filename,
-        loc,
         type: "EnvironmentVariable",
       };
 
@@ -215,6 +216,11 @@ async function getEnvVars(dir, logger) {
       } else {
         console.error(node, node.constructor.name);
       }
+
+      Object.assign(answer, {
+        filename,
+        loc,
+      });
       return answer;
     })
     .filter((a) => a);
@@ -271,7 +277,9 @@ program
     } else if (options.output === "stderr") {
       console.error(output);
     } else {
-      await fs.writeFile(path.resolve(options.output), output, "utf8");
+      const outfile = path.resolve(options.output);
+      await fs.writeFile(outfile, output, "utf8");
+      logger.info(`Wrote ${vars.length} records to ${outfile}`);
     }
   });
 
