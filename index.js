@@ -316,6 +316,42 @@ function resolveMultiAssignment(node) {
   return node;
 }
 
+function normalizeNode(node) {
+  const { loc, filename, initialized } = node;
+  const answer = {
+    type: "EnvironmentVariable",
+  };
+
+  if (node?.property?.type === "Identifier") {
+    answer.name = node.property.name;
+  } else if (node?.property?.type === "Literal") {
+    answer.name = node.property.value;
+  } else if (node?.property?.type === "MemberExpression") {
+    if (node.initialized) {
+      const val = node.initialized.find((elem) => elem?.value);
+      if (val) {
+        answer.name = val.value;
+      }
+    }
+    if (!answer.name) {
+      answer.computed = getObjectNotation(node.property);
+    }
+  } else {
+    console.error(node, node.constructor.name);
+  }
+
+  Object.assign(answer, {
+    reference: {
+      filename,
+      loc,
+    },
+  });
+  if (initialized) {
+    Object.assign(answer, { initialized });
+  }
+  return answer;
+}
+
 async function getEnvVars(dir, logger) {
   logger.info(`Scanning ${dir}`);
   const contents = await globFiles(dir);
@@ -330,6 +366,7 @@ async function getEnvVars(dir, logger) {
     },
     cliProgress.Presets.shades_classic
   );
+
   logger.info("Looking for references to process.env...");
   bar.start(contents.length, 0, { filename: "N/A" });
   const allVars = Object.keys(allTrees)
@@ -354,43 +391,9 @@ async function getEnvVars(dir, logger) {
     .flat()
     .filter(exists);
   bar.stop();
-  const output = allVars
-    .map((node) => {
-      const { loc, filename, initialized } = node;
-      const answer = {
-        type: "EnvironmentVariable",
-      };
 
-      if (node?.property?.type === "Identifier") {
-        answer.name = node.property.name;
-      } else if (node?.property?.type === "Literal") {
-        answer.name = node.property.value;
-      } else if (node?.property?.type === "MemberExpression") {
-        if (node.initialized) {
-          const val = node.initialized.find((elem) => elem?.value);
-          if (val) {
-            answer.name = val.value;
-          }
-        }
-        if (!answer.name) {
-          answer.computed = getObjectNotation(node.property);
-        }
-      } else {
-        console.error(node, node.constructor.name);
-      }
+  const output = allVars.map(normalizeNode).filter((a) => a);
 
-      Object.assign(answer, {
-        reference: {
-          filename,
-          loc,
-        },
-      });
-      if (initialized) {
-        Object.assign(answer, { initialized });
-      }
-      return answer;
-    })
-    .filter((a) => a);
   return output.sort((a, b) => {
     const aName = a.computed || a.name;
     const bName = b.computed || b.name;
