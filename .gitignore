@@ -1,3 +1,5 @@
 node_modules
 **/*-tree.json
 vars.json
+**/*-node.json
+tree.json

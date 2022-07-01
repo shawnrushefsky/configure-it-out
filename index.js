@@ -109,8 +109,8 @@ function isFrom({ propName, objName, tree }) {
     .map((node) => {
       switch (node.type) {
         case "VariableDeclarator":
-          return node.id.properties
-            .map((prop) => prop.value.name)
+          return node?.id?.properties
+            ?.map((prop) => prop.value.name)
             .filter((name) => name === propName);
         default:
           console.error(node);
@@ -147,10 +147,34 @@ function getAST(content) {
   return tree;
 }
 
-async function getEnvVars(dir, logger) {
-  logger.info(`Scanning ${dir}`);
-  const contents = await globFiles(dir);
-  logger.info(`${contents.length} files found.`);
+function findSymbolDeclaration(memberExpression, tree) {
+  const used = new Set();
+  const match = treeFilter(tree, {
+    success: (node) =>
+      (node.type === "VariableDeclarator" &&
+        node?.id?.type === "Identifier" &&
+        node?.id?.name === memberExpression.object.name) ||
+      (memberExpression.object.name === "exports" &&
+        node?.type === "AssignmentExpression" &&
+        node.left.type === "MemberExpression" &&
+        node.left?.object?.name === "exports" &&
+        node.left?.property.name === memberExpression?.property?.name),
+  });
+  return match.filter((node) => {
+    if (used.has(hashNode(node))) {
+      return false;
+    }
+    used.add(hashNode(node));
+    return true;
+  });
+}
+
+function hashNode(node) {
+  return `${node.type}-${node.start}-${node.end}`;
+}
+
+function getASTs(fileList, dir) {
+  const map = {};
   const bar = new cliProgress.SingleBar(
     {
       format: "{bar} - {filename}",
@@ -159,50 +183,180 @@ async function getEnvVars(dir, logger) {
     },
     cliProgress.Presets.shades_classic
   );
-  bar.start(contents.length, 0, { filename: "N/A" });
-  const allVars = contents
-    .map(({ content, filename }) => {
-      bar.increment({ filename: path.relative(dir, filename) });
-      try {
-        const ast = getAST(content);
-        if (!ast) {
-          logger.warn("Skipping", filename, "- unparsable");
-          return;
-        }
-        const raw = treeFilter(ast, {
-          success: (node) =>
-            node.type === "MemberExpression" && isProcessDotEnv(node),
-          maybe: isFromEnv,
-        });
-        const nodes = (Array.isArray(raw) ? raw : [raw]).map((node) => {
-          node.filename = filename;
-          return node;
-        });
-        if (
-          maybes.length &&
-          isFrom({ propName: "env", objName: "process", tree: ast })
-        ) {
-          nodes.push(
-            ...maybes
-              .map(({ id: { properties } }) => {
-                return properties.map((prop) => {
-                  return { property: prop.key, filename };
-                });
-              })
-              .flat()
-          );
-        }
-        maybes = [];
-        return nodes;
-      } catch (e) {
-        console.error(filename);
-        console.error(e);
+  bar.start(fileList.length, 0, { filename: "N/A" });
+  fileList.forEach(({ filename, content }) => {
+    bar.increment({ filename: path.relative(dir, filename) });
+    map[filename] = getAST(content);
+    if (!map[filename]) {
+      logger.warn("Skipping", filename, "- unparsable");
+      delete map[filename];
+      return;
+    }
+  });
+  bar.stop();
+  return map;
+}
+
+function isARequireStatement(node) {
+  const conditions = [
+    node?.init?.type === "CallExpression",
+    node.init?.callee?.type === "Identifier",
+    node.init?.callee?.name === "require",
+    node.init?.arguments?.length === 1,
+    node.init?.arguments[0]?.type === "Literal",
+  ];
+  return conditions.every((a) => a);
+}
+
+function isALiteralAssignment(node) {
+  const conditions = [
+    node?.type === "AssignmentExpression",
+    node?.operator === "=",
+    node?.right?.type === "Literal",
+  ];
+  return conditions.every((a) => a);
+}
+
+function isAVoidAssignment(node) {
+  const conditions = [
+    node?.type === "AssignmentExpression",
+    node?.operator === "=",
+    node?.right?.type === "UnaryExpression",
+    node?.right?.operator === "void",
+    node?.right?.argument?.type === "Literal",
+    node?.right?.argument?.value === 0,
+  ];
+  return conditions.every((a) => a);
+}
+
+function getNodeModulesPath(filepath) {
+  let nmPath = path.dirname(filepath);
+  while (
+    path.basename(nmPath) !== "node_modules" &&
+    path.dirname(nmPath) !== nmPath
+  ) {
+    nmPath = path.dirname(nmPath);
+  }
+  return nmPath;
+}
+
+let hasBeenCalled = false;
+async function die(node, tree) {
+  if (hasBeenCalled) return;
+  console.log("Dying.");
+  hasBeenCalled = true;
+  await Promise.all([
+    fs.writeFile("die-tree.json", JSON.stringify(tree, null, 2), { flag: "w" }),
+    fs.writeFile("die-node.json", JSON.stringify(node, null, 2), { flag: "w" }),
+  ]);
+  process.exit(1);
+}
+
+function figureOutInitialization(tree, filename) {
+  return (node) => {
+    node.filename = filename;
+    if (node?.property?.type === "MemberExpression") {
+      let declarations = findSymbolDeclaration(node.property, tree);
+      if (declarations.length === 0) {
+        die(node.property, tree);
+      } else {
+        node.initialized = declarations
+          .map((declaration) => {
+            if (isARequireStatement(declaration)) {
+              if (!declaration?.init?.arguments[0]?.value) {
+                die(declaration, tree);
+              }
+              const requiredFrom = declaration.init.arguments[0].value;
+              let treeToPull;
+              if (requiredFrom.startsWith("./")) {
+                treeToPull = path.resolve(filename, requiredFrom);
+              } else {
+                treeToPull = path.join(
+                  getNodeModulesPath(filename),
+                  requiredFrom
+                );
+              }
+              return { filename: treeToPull };
+            } else if (isALiteralAssignment(declaration)) {
+              return {
+                filename,
+                loc: declaration.right.loc,
+                value: declaration.right.value,
+              };
+            } else if (!isAVoidAssignment(declaration)) {
+              const assignment = resolveMultiAssignment(declaration);
+              if (!assignment.type === "Literal") {
+                die(assignment, tree);
+              } else {
+                return {
+                  filename,
+                  loc: assignment.loc,
+                  value: assignment.value,
+                };
+              }
+            }
+          })
+          .filter((a) => a);
       }
+    }
+    return node;
+  };
+}
+
+function resolveMultiAssignment(node) {
+  while (
+    node?.right?.type === "AssignmentExpression" &&
+    node?.right?.operator === "="
+  ) {
+    node = node.right;
+  }
+  if (isALiteralAssignment(node.right)) {
+    return node.right;
+  }
+  return node;
+}
+
+async function getEnvVars(dir, logger) {
+  logger.info(`Scanning ${dir}`);
+  const contents = await globFiles(dir);
+  logger.info(`${contents.length} files found.`);
+  logger.info("Parsing Contents...");
+  const allTrees = getASTs(contents, dir);
+  const bar = new cliProgress.SingleBar(
+    {
+      format: "{bar} - {filename}",
+      hideCursor: true,
+      clearOnComplete: true,
+    },
+    cliProgress.Presets.shades_classic
+  );
+  logger.info("Looking for references to process.env...");
+  bar.start(contents.length, 0, { filename: "N/A" });
+  const allVars = Object.keys(allTrees)
+    .map((filename) => {
+      bar.increment({ filename: path.relative(dir, filename) });
+      const ast = allTrees[filename];
+      let success;
+      if (isFrom({ propName: "env", objName: "process", tree: ast })) {
+        success = (node) =>
+          (node.type === "MemberExpression" && isProcessDotEnv(node)) ||
+          isFromEnv(node);
+      } else {
+        success = (node) =>
+          node.type === "MemberExpression" && isProcessDotEnv(node);
+      }
+      const raw = treeFilter(ast, {
+        success,
+      });
+      const nodes = Array.isArray(raw) ? raw : [raw];
+      return nodes.map(figureOutInitialization(ast, filename));
     })
     .flat()
-    .filter(exists)
+    .filter(exists);
+  bar.stop();
+  const output = allVars
     .map((node) => {
-      const { loc, filename } = node;
+      const { loc, filename, initialized } = node;
       const answer = {
         type: "EnvironmentVariable",
       };
@@ -212,20 +366,32 @@ async function getEnvVars(dir, logger) {
       } else if (node?.property?.type === "Literal") {
         answer.name = node.property.value;
       } else if (node?.property?.type === "MemberExpression") {
-        answer.computed = getObjectNotation(node.property);
+        if (node.initialized) {
+          const val = node.initialized.find((elem) => elem?.value);
+          if (val) {
+            answer.name = val.value;
+          }
+        }
+        if (!answer.name) {
+          answer.computed = getObjectNotation(node.property);
+        }
       } else {
         console.error(node, node.constructor.name);
       }
 
       Object.assign(answer, {
-        filename,
-        loc,
+        reference: {
+          filename,
+          loc,
+        },
       });
+      if (initialized) {
+        Object.assign(answer, { initialized });
+      }
       return answer;
     })
     .filter((a) => a);
-  bar.stop();
-  return allVars.sort((a, b) => {
+  return output.sort((a, b) => {
     const aName = a.computed || a.name;
     const bName = b.computed || b.name;
     if (aName < bName) {
